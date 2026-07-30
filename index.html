@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Amazing Digital Circus: Vivaan's Ultimate Rundown & Interactive Review</title>
+  <meta name="description" content="An interactive, 5-star digital circus rundown of The Amazing Digital Circus based on Vivaan Tonni's thoughts, features, character details, and episode tier lists.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+  <!-- Caine's Curtain Entrance Overlay -->
+  <div id="intro-overlay">
+    <div id="curtain-l" class="curtain curtain-left"></div>
+    <div id="curtain-r" class="curtain curtain-right"></div>
+    <div class="intro-content">
+      <h1>THE AMAZING DIGITAL CIRCUS</h1>
+      <p>
+        Welcome to Vivaan Tonni's Ultimate Digital Rundown of the show! 
+        Enter if you dare to explore likes, dislikes, hot takes, character secrets, and official rankings.
+      </p>
+      <button id="enter-circus-btn" class="tadc-btn primary">Enter The Circus 🎪</button>
+    </div>
+  </div>
+
+  <!-- Header Marquee & Interactive Controls -->
+  <header>
+    <div class="marquee-container" id="marquee-header">
+      <h1>THE DIGITAL CIRCUS SHOWCASE</h1>
+    </div>
+    <div class="author-badge">A Comprehensive Rundown by ${Vivaan Tonni}</div>
+    
+    <div class="control-bar">
+      <button id="sound-toggle" class="tadc-btn">🔊 Audio ON</button>
+      <button id="glitch-toggle" class="tadc-btn primary">👾 Toggle Glitch Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcome Intro -->
+    <section id="welcome-intro">
+      <h2 class="section-title">🎪 Welcome to the Ring</h2>
+      <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-secondary);">
+        "I have been a fan since the pilot. Now that the show is over, these are my thoughts on everything about the Digital Circus. It will include likes, dislikes, episode/character rankings, and more. Let's dive in!"
+      </p>
+    </section>
+
+    <!-- Likes Section -->
+    <section id="likes-section">
+      <h2 class="section-title">⭐ What Shines: The Likes</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 1rem;">
+        From stellar voice acting to heartwarming redemptions, these are the aspects of TADC that defined its peak quality.
+      </p>
+      <div class="cards-grid" id="likes-cards-container">
+        <!-- JS filled -->
+      </div>
+    </section>
+
+    <!-- Dislikes Section -->
+    <section id="dislikes-section">
+      <h2 class="section-title">⚠️ The Glitches: The Dislikes</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 1rem;">
+        Critiques on fan songs falloff, screen time distribution, toxic fandom habits, and clearing up the misconception that this is a kids' show.
+      </p>
+      <div class="cards-grid" id="dislikes-cards-container">
+        <!-- JS filled -->
+      </div>
+    </section>
+
+    <!-- Caine's Swear Filter Simulator -->
+    <section id="swear-filter-section">
+      <div id="swear-blocker-widget">
+        <!-- JS filled -->
+      </div>
+    </section>
+
+    <!-- Jax Spotlight Analysis & Graph -->
+    <section id="jax-screen-time-section">
+      <h2 class="section-title">🐰 Jax's Screen Time Overkill</h2>
+      <div id="jax-line-chart">
+        <!-- JS filled -->
+      </div>
+    </section>
+
+    <!-- Fan Songs Jukebox -->
+    <section id="fan-songs-section">
+      <h2 class="section-title">🎵 TADC Songs & Jukebox Era Battle</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 1rem;">
+        Comparing the peak nostalgic fan song era with the current falloff period.
+      </p>
+      <div class="jukebox-grid">
+        <div class="jukebox-side peak-side">
+          <h4>🔥 The Peak Classics Era</h4>
+          <div id="jukebox-peak-songs"></div>
+        </div>
+        <div class="jukebox-side falloff-side">
+          <h4>📉 The Falloff Era</h4>
+          <div id="jukebox-falloff-songs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Episode Tier List -->
+    <section id="episode-tier-section">
+      <h2 class="section-title">🎬 Episode Tier List</h2>
+      <div class="tier-list-container">
+        <div class="tier-row">
+          <div class="tier-header tier-s">S</div>
+          <div class="tier-items" id="episodes-tier-s"></div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-header tier-a">A</div>
+          <div class="tier-items" id="episodes-tier-a"></div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-header tier-b">B</div>
+          <div class="tier-items" id="episodes-tier-b"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Character Tier List -->
+    <section id="character-tier-section">
+      <h2 class="section-title">🎭 Character Tier List & Inspector</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 1rem;">
+        Click on any character card to inspect their stats, official render, and Vivaan's personalized thoughts!
+      </p>
+      <div class="tier-list-container">
+        <div class="tier-row">
+          <div class="tier-header tier-s">S</div>
+          <div class="tier-items" id="characters-tier-s"></div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-header tier-a">A</div>
+          <div class="tier-items" id="characters-tier-a"></div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-header tier-b">B</div>
+          <div class="tier-items" id="characters-tier-b"></div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-header tier-c">C</div>
+          <div class="tier-items" id="characters-tier-c"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Inspector Modal Overlay -->
+  <div id="modal-overlay"></div>
+  
+  <!-- Inspector Modal Card -->
+  <div id="character-modal">
+    <button class="close-btn" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-content-wrap">
+      <div class="modal-left">
+        <div class="modal-image-container">
+          <img id="modal-char-image" src="" alt="Character Render" />
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">SCRIPT LINE SHARE</div>
+          <div class="stat-val" id="modal-char-lineshare">0%</div>
+        </div>
+      </div>
+      <div class="modal-right">
+        <h3 id="modal-char-name">Character Name</h3>
+        <div id="modal-char-tier" class="tier-indicator">S Tier</div>
+        <div class="modal-role" id="modal-char-role">Role Description</div>
+        <p class="modal-quote" id="modal-char-quote">"Quote goes here"</p>
+        <div class="opinion-label">Vivaan's Verdict:</div>
+        <p class="modal-opinion" id="modal-char-opinion">Personalized review notes go here.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>🎪 Designed in full digital-glitch style &copy; 2026 Vivaan Tonni's Digital Circus.</p>
+    <p style="font-size: 0.75rem; color: rgba(255,255,255,0.25)">This is an opinion-based fan rundown. The Amazing Digital Circus is &copy; Gooseworx and GLITCH Productions.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
